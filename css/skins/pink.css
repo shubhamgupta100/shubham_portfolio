@@ -13,6 +13,8 @@
 .aside .nav li a.active{
     color: #ec1839 ;
 }
+.ed-ex .ed-ex-content .timeline .circle-dot,
+.ed-ex .ed-ex-content .timeline .timeline-item::before,
 .about .about-content .skills .skill-item .progress .progress-in,
 .btn,
 .section-title h2::before,
