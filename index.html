@@ -12,9 +12,30 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
 
+    <!-- Live style switcher -->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+
+
 </head>
 
 <body>
+
+    <!-- Preloader -->
+
+    <div class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+
+
+
+    <!-- Preloader end -->
 
     <!-- Main container -->
     <div class="main-container">
@@ -30,12 +51,12 @@
             </div>
             <!-- Nav -->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-book"></i>Education</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Certification</a></li>
-                <li><a href="#"><i class="fa fa-file"></i>Projects</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#education"><i class="fa fa-book"></i>Education</a></li>
+                <li><a href="#certificate"><i class="fa fa-briefcase"></i>Certification</a></li>
+                <li><a href="#project"><i class="fa fa-file"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
             <!-- Copyright -->
             <div class="copyright-text">
@@ -48,7 +69,7 @@
         <!-- Main content -->
         <div class="main-content">
             <!-- Home Section -->
-            <section class="home section ">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="images/about.jpg" alt="profile" class="shadow-dark">
@@ -68,7 +89,7 @@
             <!-- Home Section end-->
 
             <!-- About Section  -->
-            <section class="about section">
+            <section class="about section " id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -134,8 +155,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#" class="btn">Hire Me</a>
+                                            <a href="resume/Shubham.pdf" class="btn">Download CV</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -226,7 +247,7 @@
             <!-- About Section end -->
 
             <!-- Education section -->
-            <section class="ed-ex section">
+            <section class="ed-ex section" id="education">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -293,19 +314,19 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2018-2022
+                                                        <i class="fa fa-calendar"></i>2020-Present
                                                     </h6>
-                                                    <h4 class="timeline-title">Bachelor Of Technology</h4>
+                                                    <h4 class="timeline-title">Campus Intern at Coding Ninajs</h4>
                                                     <p class="timeline-text">
-                                                        Bundelkhand Institute of Engineering and Technology, Jhansi is a
-                                                        government-funded autonomous engineering college in Jhansi,
-                                                        Uttar Pradesh, India. It is a constituent college of Uttar
-                                                        Pradesh Technical University.
-                                                        It is recognised by the All India Council for Technical
-                                                        Education
+                                                        Facilitated monthly programs focusing on personal safety, off-campus education and encouraging 
+                                                        community interaction. Promoted campus awareness of activities and engagement opportunities with
+                                                         on-campus table tents, email distribution, and social media promotion.
+                                                         Supported campus events to increase student engagement and promote campus-wide initiatives.
+                                                         Organized private and public events on campus for college community.
+                                                          Circulated fliers, displayed posters and offered promotional items on campus to introduce students to Coding Ninjas
                                                     </p>
                                                 </div>
-                                                <div class="timeline-item">
+                                                <!-- <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h6 class="timeline-date">
                                                         <i class="fa fa-calendar"></i>2014-2016
@@ -326,7 +347,7 @@
                                                         Shree Ram Bahal Pal Inter College in Shahganj, Jaunpur is one of
                                                         the top Schools in Shahganj
                                                     </p>
-                                                </div>
+                                                </div> -->
                                                 <!-- Timeline item end -->
                                             </div>
                                         </div>
@@ -343,7 +364,7 @@
             <!-- Certificate section start -->
 
 
-            <section class="certificate section">
+            <section class="certificate section" id="certificate">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -430,7 +451,7 @@
 
 
 
-            <section class="project section">
+            <section class="project section" id="project">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -443,7 +464,7 @@
                         <div class="project-item padd-15">
                             <div class="project-item-inner">
                                 <div class="project-image">
-                                    <img src="Project/MusicPlayer.png" alt="">
+                                    <img src="project/MusicPlayer.png" alt="">
                                 </div>
                                 <div class="project-info">
                                     <h4>Web Design</h4>
@@ -457,7 +478,7 @@
                         <div class="project-item padd-15">
                             <div class="project-item-inner">
                                 <div class="project-image">
-                                    <img src="Project/Resume.png" alt="">
+                                    <img src="project/Resume.png" alt="">
                                 </div>
                                 <div class="project-info">
                                     <h4>Web Design</h4>
@@ -471,7 +492,7 @@
                         <div class="project-item padd-15" data-category="web-design">
                             <div class="project-item-inner">
                                 <div class="project-image">
-                                    <img src="Project/calculator.png" alt="">
+                                    <img src="project/calculator.png" alt="">
                                 </div>
                                 <div class="project-info">
                                     <h4>Web Design</h4>
@@ -485,7 +506,7 @@
                         <div class="project-item padd-15" data-category="web-design">
                             <div class="project-item-inner">
                                 <div class="project-image">
-                                    <img src="Project/TODOapp-screenshot.png" alt="">
+                                    <img src="project/TODOapp-screenshot.png" alt="">
                                 </div>
                                 <div class="project-info">
                                     <h4>Web Design</h4>
@@ -508,7 +529,7 @@
 
             <!-- Contact section start -->
 
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -577,22 +598,78 @@
                                     <button type="submit" class="btn">Send Message</button>
                                 </div>
                             </div>
-
-
                         </form>
                     </div>
-
-
                     <!-- Contact-form-end -->
                 </div>
             </section>
-
             <!-- Contact section end -->
-
         </div>
         <!-- Main content end -->
     </div>
     <!-- Main container  end-->
+
+    <!-- Live style Switcher - Demo Only -->
+    <div class="style-switcher">
+
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li>
+                <a href="javascript:void(0);" title="pink" style="background-color: #ec1839;"
+                    onclick="setActiveStyle('pink')"></a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0);" title="blue" style="background-color: #2196f3;"
+                    onclick="setActiveStyle('blue')"></a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;"
+                    onclick="setActiveStyle('orange')"></a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;"
+                    onclick="setActiveStyle('yellow')"></a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0);" title="green" style="background-color: #72b626;"
+                    onclick="setActiveStyle('green')"></a>
+            </li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            Dark
+        </label>
+    </div>
+
+
+    <!-- Live style Switcher - Demo Only  end -->
+
+    <script src="js/script.js"></script>
+
+
+
+    <!-- Live style js - Demo Only  -->
+
+
+    <script src="js/styleSwitcher.js"></script>
+
+    <!-- Live style js - Demo Only  end -->
+
+
 </body>
 
 </html>
