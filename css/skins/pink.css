@@ -8,11 +8,14 @@
     border-right: 4px solid #ec1839;
     
 }
+.certificate .certificate-filter button.active,
+.contact .contact-info-item .icon .fa,
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
 .aside .nav li a.active{
     color: #ec1839 ;
 }
+
 .ed-ex .ed-ex-content .timeline .circle-dot,
 .ed-ex .ed-ex-content .timeline .timeline-item::before,
 .about .about-content .skills .skill-item .progress .progress-in,
@@ -24,4 +27,8 @@
 .aside .nav-toggler span::after,
 .home .intro .social-links a{
     background-color: #ec1839;   
+}
+.certificate .certificate-filter button.active{
+    border-color: #ec1839;
+   
 }
