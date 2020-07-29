@@ -21,6 +21,7 @@ body{
 ::before,::after{
     box-sizing: border-box;
 }
+
 input,textarea,select{
     font-family: 'Montserrat', sans-serif;
 }
