@@ -3,7 +3,46 @@ window.addEventListener('load', function () {
     setTimeout(function () {
         document.querySelector('.preloader').style.display = "none";
     }, 1000)
-})
+});
+
+
+
+
+// Certificate
+
+const filterContainer = document.querySelector('.certificate-filter');
+filterBtns = filterContainer.children;
+totalFilterBtns = filterBtns.length;
+certificateItems = document.querySelectorAll('.certificate-item');
+totalCertificateItem = certificateItems.length;
+
+
+
+for(let i = 0 ;i<totalFilterBtns;i++){
+    filterBtns[i].addEventListener('click',function(){
+        filterContainer.querySelector('.active').classList.remove('active');
+        this.classList.add('active');
+
+        const filterValue = this.getAttribute('data-filter');
+        for(let k=0;k<totalCertificateItem;k++){
+            if(filterValue === certificateItems[k].getAttribute('data-category')){
+                certificateItems[k].classList.remove('hide');
+                certificateItems[k].classList.add('show');
+            }
+            else{
+                certificateItems[k].classList.remove('show');
+                certificateItems[k].classList.add('hide');
+            }
+            if(filterValue==='all'){
+                certificateItems[k].classList.remove('hide');
+                certificateItems[k].classList.add('show');
+
+            }
+        }
+
+
+    })
+}
 
 
 
