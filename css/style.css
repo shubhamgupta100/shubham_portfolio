@@ -107,7 +107,7 @@ input,textarea,select{
     content: '';
     height: 4px;
     width: 50px;
-    position: absolute;
+    position: absolute;;
     top: 100%;
     left: 0;
     
@@ -755,10 +755,10 @@ input,textarea,select{
     position: absolute;
     width: 0;
     top: 4%;
-    left: 50%;
-    
-    height: 100%;
-    color: #433E3F;
+    left: 50%;   
+    height: 95%;
+    /* height: auto; */
+    /* color: #433E3F; */
 }
 
 .project .timeline-traveller {
@@ -975,7 +975,7 @@ body.dark .shadow-dark{
     .education #timeline-divider {
         /* top: 10%; */
         left: 2%;
-        height: 100%;
+        height: 95%;
     }
     .education .timeline-box::after {
         left: -10% !important;
@@ -989,7 +989,7 @@ body.dark .shadow-dark{
     .project #timeline-divider {
         /* top: 2%; */
         left: 2%;
-        height: 100%;
+        height: 95%;
     }
     .project .timeline-box::after {
         left: -10% !important;
