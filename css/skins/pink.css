@@ -8,6 +8,7 @@
     border-right: 4px solid #ec1839;
     
 }
+.m-blue ,
 body.dark .certificate .certificate-filter button.active,
 .certificate .certificate-filter button.active,
 .contact .contact-info-item .icon .fa,
@@ -19,8 +20,8 @@ body.dark .aside .nav li a.active,
     color: #ec1839 ;
 }
 
-.ed-ex .ed-ex-content .timeline .circle-dot,
-.ed-ex .ed-ex-content .timeline .timeline-item::before,
+.project .timeline-box::after,
+.education .timeline-box::after,
 .about .about-content .skills .skill-item .progress .progress-in,
 .btn,
 .section-title h2::before,
@@ -36,4 +37,8 @@ body.dark .certificate .certificate-filter button.active,
 .certificate .certificate-filter button.active{
     border-color: #ec1839;
    
+}
+.project #timeline-divider,
+.education #timeline-divider{
+    border-right: 1px solid #ec1839;
 }

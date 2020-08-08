@@ -194,6 +194,8 @@ input,textarea,select{
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
+
+
 @-webkit-keyframes spin{
     0%{
         -webkit-transform: rotate(0deg);
@@ -542,103 +544,80 @@ input,textarea,select{
     color: #302e4d;
 }
 
-/* Education and Experience */
+/* Education  */
 
-.ed-ex .ed-ex-content{
-   
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
 
-.ed-ex .ed-ex-content .education{
-        /* background-color: red; */
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-        margin-top: 30px;
-}
-
-.ed-ex .ed-ex-content .experience{
-    /* background-color:blue; */
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 30px;
-}
-.ed-ex .ed-ex-content h3.title{
-    font-size: 24px;
-    margin-bottom:30px;
-    font-weight: 700;
-    color: #302e4d;
-}
-.ed-ex .ed-ex-content .timeline-box{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.ed-ex .ed-ex-content .timeline{
-    background-color: #fdf9ff;
-    padding: 30px 15px;
-    border: 1px solid #d4d4e3;
-    border-radius: 10px;
+.education .timeline {
+    position: relative;
     width: 100%;
+}
+
+.education .timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height:150px;
     position: relative;
-    
+    left:5%;
+    text-align:right;
 }
-.ed-ex .ed-ex-content .timeline .timeline-item{
-    position: relative;
-    padding-left: 37px;
-    padding-bottom: 50px;
-}
-.ed-ex .ed-ex-content .timeline .timeline-item:last-child{
-    padding-bottom: 0px;
-}
-.ed-ex .ed-ex-content .timeline .timeline-item::before{
+
+.education .timeline-box::after {
     content: '';
-    width: 1px;
     position: absolute;
-    height: 100%;
-    left: 7px;
-    top: 0;
-}
-.ed-ex .ed-ex-content .timeline .circle-dot{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 15px;
     width: 15px;
-    border-radius: 50%;
-
+    height: 15px;
+    /* background-color: #ec1839; */
+    top: 6%;
+    border-radius:50%;  
+    z-index: 1;
 }
 
-.ed-ex .ed-ex-content .timeline .timeline-date{
-   font-size: 14px;
-   font-weight: 400;
-   margin-bottom: 12px;
-   color: #504e70;
+.education .timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.education .timeline-box:nth-child(2n+1)::after {
+    right: -14.5%;
+}
+
+.education .timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
 
 
+.education .timeline-container {
+    padding:8px;
 }
-.ed-ex .ed-ex-content .timeline .timeline-date .fa{
-    margin-right: 5px;
-}
-.ed-ex .ed-ex-content .timeline .timeline-title{
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    color: #302e4d;
+
+.education #timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 4%;
+    left: 50%;
     
+    height: 100%;
+    color: #433E3F;
 }
-.ed-ex .ed-ex-content .timeline .timeline-text{
-    font-size: 16px;
-    line-height: 25px;
-    color: #504e70;
+
+.education .timeline-traveller {
+    position: sticky;
+    top:135px;
+    z-index: 2;
+}
+
+.education #timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+.text-align-justify {
+    text-align: justify;
+}
+.m0 {
     margin: 0;
-    /* padding-bottom: 50px; */   
 }
+
 
 /* Certificate */
 
@@ -725,37 +704,80 @@ input,textarea,select{
     display: none;
 }
 
-/* Project section */
+/* Project  */
 
-.project .container{
-    padding-bottom: 40px;
-}
-
-.project .project-item{
-    -ms-flex: 0 0 33.33%;
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    margin-bottom: 30px;
-}
-.project .project-item-inner .project-image{
-    border: 6px solid #fdf9ff;
-    border-radius: 10px;
-}
-.project .project-item-inner .project-image:hover{
-    box-shadow: 0 0 20px #74ADC8;
-    transform: scale(1.05);
-}
-.project .project-item-inner .project-image:hover{
-    background-color: white;
-}
-.project .project-item-inner .project-image img{
+.project .timeline {
+    position: relative;
     width: 100%;
-    display: block;
-   
-
 }
-.project .project-item .project-info{
-    display: none;
+
+.project .timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height:150px;
+    position: relative;
+    left:5%;
+    text-align:right;
+}
+
+.project .timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    /* background-color: #ec1839; */
+    top: 9%;
+    border-radius:50%;
+    /* border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%; */
+    z-index: 1;
+}
+
+.project .timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.project .timeline-box:nth-child(2n+1)::after {
+    right: -14.5%;
+}
+
+.project .timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+
+.project .timeline-container {
+    padding:8px;
+}
+
+.project #timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 4%;
+    left: 50%;
+    
+    height: 100%;
+    color: #433E3F;
+}
+
+.project .timeline-traveller {
+    position: sticky;
+    top:135px;
+    z-index: 2;
+}
+
+.project #timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+.text-align-justify {
+    text-align: justify;
+}
+.m0 {
+    margin: 0;
 }
 
 
@@ -846,14 +868,13 @@ body.dark .section{
     background-color: #151515;
 }
 body.dark .contact .contact-form .form-item .form-control,
-body.dark .ed-ex .ed-ex-content .timeline,
 body.dark .aside{
     background-color: #222222;
 }
+body.dark .project .timeline-container p,
+body.dark .education .timeline-container p,
 body.dark .contact .contact-info-item h4,
 body.dark .certificate .certificate-filter button ,
-body.dark .ed-ex .ed-ex-content .timeline .timeline-title,
-body.dark .ed-ex .ed-ex-content h3.title,
 body.dark .about .about-content .skills .skill-item h5 ,
 body.dark .about .about-content .personal-info .info-item p,
 body.dark .about .about-content .about-text h3,
@@ -863,10 +884,13 @@ body.dark .aside .logo a,
 body.dark .aside .nav li a{
     color: #ffffff;
 }
+
+body.dark .project .timeline-container h4,
+body.dark .project .timeline-container h5,
+body.dark .education .timeline-container h4,
+body.dark .education .timeline-container h5,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .contact .contact-info-item p,
-body.dark .ed-ex .ed-ex-content .timeline .timeline-text,
-body.dark .ed-ex .ed-ex-content .timeline .timeline-date,
 body.dark .about .about-content .skills .skill-item .skill-percent,
 body.dark .about .about-content .personal-info .info-item p span,
 body.dark .about .about-content .about-text p,
@@ -877,7 +901,6 @@ body.dark .aside,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .project .project-item-inner .project-image,
 body.dark .certificate .certificate-item-inner .certificate-image,
-body.dark .ed-ex .ed-ex-content .timeline,
 body.dark .about .about-content .personal-info .info-item p,
 body.dark .aside .nav li a{
     border-color: #393939;
@@ -928,25 +951,50 @@ body.dark .shadow-dark{
 
 
 @media (max-width:991px){
-    .project .project-item,
+    
     .certificate .certificate-item{
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
         
     }
-
+    
 }
 @media (max-width:767px){
     .contact .contact-form .col-6,
-    .ed-ex .ed-ex-content .education,
-    .ed-ex .ed-ex-content .experience,
     .about .about-content .skills,
     .about .about-content .personal-info{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .education .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+    .education #timeline-divider {
+        /* top: 10%; */
+        left: 2%;
+        height: 100%;
+    }
+    .education .timeline-box::after {
+        left: -10% !important;
+    }
+
+    
+    .project .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+    .project #timeline-divider {
+        /* top: 2%; */
+        left: 2%;
+        height: 100%;
+    }
+    .project .timeline-box::after {
+        left: -10% !important;
+    }
+
 
 
 }
@@ -959,6 +1007,29 @@ body.dark .shadow-dark{
         flex: 0 0 100%;
         max-width: 100%;
     }
+    
+    /* .project .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    } */
+
+    .education .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+    .education .timeline-box::after {
+        left: -11% !important;
+    }
+
+    .project .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+    .project .timeline-box::after {
+        left: -11% !important;
+    }
+    
+
 }
 
 
