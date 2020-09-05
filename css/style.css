@@ -372,12 +372,17 @@ input,textarea,select{
 
 /* Home */
 
-.home{
+.home {
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
+    background-image: url('/images/g.jpg');
+    background-position:center;
+    background-size: cover;
+    background-attachment: scroll;
     
 }
+
 .home .intro{
     text-align: center;
 }
@@ -401,7 +406,8 @@ input,textarea,select{
     font-weight: 500;
     margin: 0;
     line-height: 22px;
-    color: #504e70;
+    /* color: #504e70; */
+    color:#c6c6d1;
 }
 
 .home .intro .social-links{
