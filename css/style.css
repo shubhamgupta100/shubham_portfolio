@@ -376,11 +376,10 @@ input,textarea,select{
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
-    background-image: url('/images/j.jpg');
+    background-image: url("../images/shubh/j.jpg");
     background-position:top;
     background-size: cover;
-    background-attachment: scroll;
-    
+    background-attachment:contain;   
 }
 
 .home .intro{
