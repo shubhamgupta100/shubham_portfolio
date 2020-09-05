@@ -376,22 +376,19 @@ input,textarea,select{
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("../images/shubh/j.jpg");
-    background-position:top;
+    background-image: url("../images/shubh/c.jpg");
+    background-position:center;
     background-size: cover;
     background-attachment:contain;   
 }
 
+
 .home .intro{
     text-align: center;
+    
 }
-.home .intro img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    display: inline-block;
-    border:8px solid #ffffff
-}
+
+
 .home .intro h1{
     font-size: 30px;
     /* color: #302e4d; */
@@ -401,14 +398,15 @@ input,textarea,select{
     margin: 20px 0 5px;
 
 }
-.home .intro p{
+.home .intro h2{
     font-size: 16px;
     font-weight: 500;
     margin: 0;
-    line-height: 22px;
+    line-height:22px;
     /* color: #504e70; */
     /* color:#c6c6d1; */
-    color: cyan;
+    color: #0848ff;
+    
 }
 
 .home .intro .social-links{
