@@ -771,6 +771,12 @@ input,textarea,select{
     top:135px;
     z-index: 2;
 }
+.project a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
 
 .project #timeline-divider i {
     transform: rotate(90deg);
@@ -780,6 +786,7 @@ input,textarea,select{
 }
 .text-align-justify {
     text-align: justify;
+    word-spacing:1px;
 }
 .m0 {
     margin: 0;
@@ -881,6 +888,7 @@ body.dark .education .timeline-container p,
 body.dark .contact .contact-info-item h4,
 body.dark .certificate .certificate-filter button ,
 body.dark .about .about-content .skills .skill-item h5 ,
+body.dark .project a,
 body.dark .about .about-content .personal-info .info-item p,
 body.dark .about .about-content .about-text h3,
 body.dark .section-title h2,
