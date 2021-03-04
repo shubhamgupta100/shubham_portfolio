@@ -8,8 +8,12 @@ body{
     margin: 0;
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
+}
+ 
+body , div , span h1 , h2 , h3 , h4 ,h5 , h5 , p  , button{
+    font-family: 'Ovo' !important;
 }
 *{
     margin: 0;
@@ -692,7 +696,15 @@ input,textarea,select{
     padding-bottom: 2px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    padding: 10px;
 
+}
+
+body.dark .certificate .certificate-filter button.active,
+.certificate .certificate-filter button.active{
+    background-color: #2196f3;
+    color: white;
+    border-radius: 15px;
 }
 .certificate .certificate-item{
     -ms-flex: 0 0 33.33%;
@@ -799,12 +811,13 @@ input,textarea,select{
 .project #timeline-divider {
     position: absolute;
     width: 0;
-    top: 4%;
+    top: 2%;
     left: 50%;   
     height: 95%;
     /* height: auto; */
     /* color: #433E3F; */
 }
+
 
 .project .timeline-traveller {
     position: sticky;
