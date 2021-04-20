@@ -211,8 +211,6 @@ select {
   border-radius: 50%;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
