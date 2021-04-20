@@ -1,10 +1,13 @@
 /* Font Awesome icon */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Google fonts */
 
+/* General Style */
 body {
   margin: 0;
   line-height: 1.5;
   font-size: 16px;
+  /* font-family: 'Montserrat', sans-serif; */
   font-weight: 400;
 }
 
@@ -183,16 +186,11 @@ select {
 
 .preloader {
   background-color: #222222;
-  background-image: url("../images/shubh/tech.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.1;
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: 150;
   display: -ms-flexbox;
   display: flex;
@@ -209,10 +207,12 @@ select {
 .preloader .loader {
   height: 40px;
   width: 40px;
-  border: 4px solid #1b1a1a;
+  border: 4px solid #e3e3e3;
   border-radius: 50%;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
